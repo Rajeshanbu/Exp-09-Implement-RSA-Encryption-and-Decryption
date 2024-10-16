@@ -16,31 +16,20 @@ Calculate Euler’s Totient function φ(n): φ(n) = (p-1) * (q-1)
 Choose a public exponent e such that: 1 < e < φ(n) = 1 and gcd(e, φ(n)) = 1(ensure e is coprime with φ(n))
 
 ### Step 5:
-Calculate the private key d as the modular inverse of e modulo φ(n): d . e ≡ 1(mod φ(n))
-
-### Step 6:
-Formulate the public key as the pair (e, n) and the private key as the pair (d, n)
-
-### Step 7:
+Calculate the private key d as the modular inverse of e modulo φ(n): d . e ≡ 1(mod φ(n)) and Formulate the public key as the pair (e, n) and the private key as the pair (d, n),
 Ask the user for an alphabetic message to encrypt.
 
-### Step 8:
-Convert each character in the message to its ASCII value.
+### Step 6:
+Convert each character in the message to its ASCII value. , Encrypt each ASCII value using the formula: C=M^e mod n (where M is the ASCII value and C is the ciphertext)
 
-### Step 9:
-Encrypt each ASCII value using the formula: C=M^e mod n (where M is the ASCII value and C is the ciphertext)
-
-### Step 10:
+### Step 7:
 Decrypt each ciphertext using the formula: M=C^d mod n (where C is the ciphertext and M is the decrypted ASCII value).
 
-### Step 11:
+### Step 8:
 Convert the decrypted ASCII values back to characters to retrieve the original message.
 
-### Step 12:
-Print the encrypted message and the decrypted message.
-
-### Step 13:
-End the program.
+### Step 9:
+Print the encrypted message and the decrypted message and End the program.
 
 ## PROGRAM:
 ```py
